@@ -10,17 +10,20 @@ h1 {
   font-size: 42px;
   text-transform: uppercase;
   text-align: center;
+  color: #fafaf9;
 }
 
 .fact {
   font-size: 20px;
   line-height: 1.4;
   font-family: sans-serif;
+  color: #fafaf9;
 }
 
 .tag {
   text-transform: uppercase;
   font-size: 14px;
+  color: #fafaf9;
 }
 
 ul {
