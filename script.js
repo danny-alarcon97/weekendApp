@@ -33,3 +33,13 @@ if (votesInteresting === votesMindBlowing) {
 } else {
   console.log("Mindblowing fact!!");
 }
+
+let votesFalse = 7;
+const totalUpvotes = votesInteresting + votesMindBlowing;
+
+const message =
+  totalUpvotes > votesFalse
+    ? "The fact is true"
+    : "Might be false, check more sources...";
+
+alert(message);
