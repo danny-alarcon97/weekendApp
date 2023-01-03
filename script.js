@@ -1,5 +1,3 @@
-console.log("hello world");
-
 const btn = document.querySelector(".btn-open");
 const form = document.querySelector(".fact-form");
 
@@ -20,7 +18,7 @@ function calcFactAge(year) {
   if (age >= 0) {
     return age;
   } else {
-    return "Impossible Year";
+    return `Impossible Year. Year needs to be less or equal to ${currentYear}`;
   }
 }
 
@@ -34,7 +32,7 @@ if (votesInteresting === votesMindBlowing) {
   console.log("Mindblowing fact!!");
 }
 
-let votesFalse = 7;
+let votesFalse = 77;
 const totalUpvotes = votesInteresting + votesMindBlowing;
 
 const message =
@@ -42,4 +40,13 @@ const message =
     ? "The fact is true"
     : "Might be false, check more sources...";
 
-alert(message);
+const text = "Libson is the capital of Portugal";
+const upperText = text.toUpperCase();
+console.log(upperText);
+
+const str = `The current fact is ${text}. It is ${calcFactAge(
+  2015
+)} years old. It is probably ${
+  totalUpvotes > votesFalse ? "correct" : "false"
+}.`;
+console.log(str);
