@@ -16,7 +16,6 @@ body {
 }
 
 /* MAIN LAYOUT */
-
 .container {
   max-width: 1500px;
   margin: 0 auto;
@@ -24,7 +23,6 @@ body {
 
 .header {
   margin-bottom: 40px;
-  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -43,7 +41,6 @@ body {
 }
 
 /* ELEMENTS */
-/* NqsATdNp5NLRUlwi */
 
 .logo {
   display: flex;
@@ -103,13 +100,14 @@ h1 {
 .vote-buttons {
   margin-left: auto;
   flex-shrink: 0;
+
   display: flex;
   gap: 8px;
 }
 
 .vote-buttons button {
   border: none;
-  background-color: #57534e;
+  background-color: #78716c;
   font-size: 18px;
   padding: 6px 12px;
   border-radius: 100px;
@@ -136,12 +134,9 @@ ul {
   transition: 0.3s;
 }
 
-.source:hover {
-  color: #3b82f6;
-}
-
+.source:hover,
 .source:active {
-  color: green;
+  color: #3b82f6;
 }
 
 .btn {
@@ -167,7 +162,7 @@ ul {
   padding: 20px 32px 17px;
 }
 
-.btn-all {
+.btn-all-categories {
   margin-bottom: 16px;
   width: 100%;
 }
@@ -178,7 +173,6 @@ ul {
 }
 
 /* FORM */
-
 .fact-form {
   background-color: #44403c;
   margin-bottom: 40px;
