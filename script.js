@@ -12,3 +12,24 @@ btn.addEventListener("click", function () {
     btn.textContent = "Share a fact";
   }
 });
+
+function calcFactAge(year) {
+  const currentYear = new Date().getFullYear();
+  const age = currentYear - year;
+
+  if (age >= 0) {
+    return age;
+  } else {
+    return "Impossible Year";
+  }
+}
+
+let votesInteresting = 20;
+let votesMindBlowing = 23;
+if (votesInteresting === votesMindBlowing) {
+  alert("This fact is equally interesting and mindblowing");
+} else if (votesInteresting > votesMindBlowing) {
+  console.log("Interesting fact!");
+} else {
+  console.log("Mindblowing fact!!");
+}
