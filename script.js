@@ -22,31 +22,36 @@ function calcFactAge(year) {
   }
 }
 
-let votesInteresting = 20;
-let votesMindBlowing = 23;
-if (votesInteresting === votesMindBlowing) {
-  alert("This fact is equally interesting and mindblowing");
-} else if (votesInteresting > votesMindBlowing) {
-  console.log("Interesting fact!");
-} else {
-  console.log("Mindblowing fact!!");
-}
+const calcFactAge2 = (year) =>
+  year <= new Date().getFullYear()
+    ? new Date().getFullYear() - year
+    : `Impossible Year. Year needs to be less or equal to ${new Date().getFullYear()}`;
 
-let votesFalse = 77;
-const totalUpvotes = votesInteresting + votesMindBlowing;
+// let votesInteresting = 20;
+// let votesMindBlowing = 23;
+// if (votesInteresting === votesMindBlowing) {
+//   alert("This fact is equally interesting and mindblowing");
+// } else if (votesInteresting > votesMindBlowing) {
+//   console.log("Interesting fact!");
+// } else {
+//   console.log("Mindblowing fact!!");
+// }
 
-const message =
-  totalUpvotes > votesFalse
-    ? "The fact is true"
-    : "Might be false, check more sources...";
+// let votesFalse = 77;
+// const totalUpvotes = votesInteresting + votesMindBlowing;
 
-const text = "Libson is the capital of Portugal";
-const upperText = text.toUpperCase();
-console.log(upperText);
+// const message =
+//   totalUpvotes > votesFalse
+//     ? "The fact is true"
+//     : "Might be false, check more sources...";
 
-const str = `The current fact is ${text}. It is ${calcFactAge(
-  2015
-)} years old. It is probably ${
-  totalUpvotes > votesFalse ? "correct" : "false"
-}.`;
-console.log(str);
+// const text = "Libson is the capital of Portugal";
+// const upperText = text.toUpperCase();
+// console.log(upperText);
+
+// const str = `The current fact is ${text}. It is ${calcFactAge(
+//   2015
+// )} years old. It is probably ${
+//   totalUpvotes > votesFalse ? "correct" : "false"
+// }.`;
+// console.log(str);
